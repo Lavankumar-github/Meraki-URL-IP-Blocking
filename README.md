@@ -1,10 +1,10 @@
 # Meraki-URL-IP-Blocking
 Automating URL &amp; IP Blocking on Meraki 
-Title: Automating URL and IP Blocking on Cisco Meraki MX using Python
- Objective
+# Title: Automating URL and IP Blocking on Cisco Meraki MX using Python
+# Objective
 This document explains how to automate the blocking of URLs and IP addresses on Cisco Meraki MX
 devices using a Python script and the official Meraki Dashboard API.
- Background
+# Background
 In network operations, blocking unwanted or malicious URLs/IPs is a frequent task. Doing it manually
 through the Meraki Dashboard GUI is time-consuming. Automating this via Python provides a scalable,
 error-free, and faster method to apply content filtering rules across networks.
