@@ -28,7 +28,7 @@ pip install meraki python-dotenv
 # ├── ips_to_block.txt
 # └── .env
 # 4. .env file format (with multiple networks)
-MERAKI_API_KEY=your_api_key_here
+< MERAKI_API_KEY=your_api_key_here >
 MERAKI_ORG_ID=your_org_id_here
 HYDERABAD=N_123456789
 MUMBAI=N_987654321
