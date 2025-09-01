@@ -8,7 +8,7 @@ devices using a Python script and the official Meraki Dashboard API.
 In network operations, blocking unwanted or malicious URLs/IPs is a frequent task. Doing it manually
 through the Meraki Dashboard GUI is time-consuming. Automating this via Python provides a scalable,
 error-free, and faster method to apply content filtering rules across networks.
- Tools Used
+# Tools Used
 Python 3.11 or later
 Meraki Python SDK ( meraki )
 .env file for storing sensitive info (API keys, network IDs)
@@ -19,24 +19,12 @@ Meraki API Key from your Meraki Dashboard: https://dashboard.meraki.com/account
 Organization ID and a list of Network IDs for MX devices
 Basic Python installed and configured
  Environment Setup
-1. Create and activate virtual environment (optional but recommended)
-python -m venv .venv
-.venv\Scripts\activate
-• 
-• 
-• 
-• 
-• 
-1. 
-2. 
-3. 
-1
-2. Install dependencies
+# 1 Install dependencies
 pip install meraki python-dotenv
-3. Project structure
-meraki_blocker/
-├── automation.py
-├── urls_to_block.txt
+# 2 Project structure
+# meraki_blocker/
+# ├── automation.py
+# ├── urls_to_block.txt
 ├── ips_to_block.txt
 └── .env
 4. .env file format (with multiple networks)
