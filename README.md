@@ -19,23 +19,23 @@ Meraki API Key from your Meraki Dashboard: https://dashboard.meraki.com/account
 Organization ID and a list of Network IDs for MX devices
 Basic Python installed and configured
  Environment Setup
-# 1 Install dependencies
+# 1. Install dependencies
 pip install meraki python-dotenv
-# 2 Project structure
+# 2. Project structure
 # meraki_blocker/
 # ├── automation.py
 # ├── urls_to_block.txt
-├── ips_to_block.txt
-└── .env
-4. .env file format (with multiple networks)
+# ├── ips_to_block.txt
+# └── .env
+# 4. .env file format (with multiple networks)
 MERAKI_API_KEY=your_api_key_here
 MERAKI_ORG_ID=your_org_id_here
 HYDERABAD=N_123456789
 MUMBAI=N_987654321
 CHENNAI=N_111222333
 DELHI=N_444555666
- What Happens in Background
-1. Authentication and Session Initialization
+# What Happens in Background
+#1. Authentication and Session Initialization
 The script loads the API key from the .env file.
 A secure session is created using meraki.DashboardAPI , establishing authenticated
 communication with the Meraki Dashboard.
