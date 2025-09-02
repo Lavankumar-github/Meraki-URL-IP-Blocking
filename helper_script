@@ -1,0 +1,19 @@
+import os
+from dotenv import load_dotenv
+from meraki import DashboardAPI
+
+# Load secrets
+load_dotenv()
+API_KEY = os.getenv("MERAKI_API_KEY")
+ORG_ID = os.getenv("your_org_id_here")
+
+dashboard = DashboardAPI(API_KEY, suppress_logging=True)
+
+print("\n📋 Networks in your organization:\n")
+networks = dashboard.organizations.getOrganizationNetworks(ORG_ID)
+
+for net in networks:
+    print(f"📡 Name: {net['name']}")
+    print(f"🆔 ID: {net['id']}")
+    print(f"📦 Product Types: {net.get('productTypes', [])}")
+    print("-" * 40)
