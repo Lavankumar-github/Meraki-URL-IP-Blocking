@@ -13,7 +13,7 @@ print("\n📋 Networks in your organization:\n")
 networks = dashboard.organizations.getOrganizationNetworks(ORG_ID)
 
 for net in networks:
-    print(f"📡 Name: {net['name']}")
-    print(f"🆔 ID: {net['id']}")
-    print(f"📦 Product Types: {net.get('productTypes', [])}")
+    print(f" Name: {net['name']}")
+    print(f" ID: {net['id']}")
+    print(f" Product Types: {net.get('productTypes', [])}")
     print("-" * 40)
