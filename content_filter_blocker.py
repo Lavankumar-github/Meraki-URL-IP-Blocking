@@ -13,7 +13,7 @@ API_KEY = os.getenv("MERAKI_API_KEY")
 if not API_KEY:
     API_KEY = getpass.getpass(" Enter your Meraki API Key: ").strip()
 
-ORG_ID = os.getenv("MERAKI_ORG_ID", "1119119")
+ORG_ID = os.getenv("MERAKI_ORG_ID", "XXXX")
 
 if not API_KEY:
     print("❌ API key missing.")
